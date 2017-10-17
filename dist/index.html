@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/x-icon" href="static/favicon.ico">
+    <title>bee-animations</title>
+    <link rel="stylesheet" href="https://unpkg.com/animate.css">
+    <style>
+      html {
+        height: 100%;
+      }
+      
+      body {
+        display: flex;
+        min-height: 100%;
+        align-items: center;
+        justify-content: center;
+        background: #222;
+      }
+      
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      
+      .center {
+        width: 110px;
+        height: 110px;
+        margin: 20px;
+        color: #fff;
+        background: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center a1"></div>
+    <script src="bee-animations.js"></script>
+    <script>
+      BeeAnimations('.a1', [{
+          name: 'rotateIn',
+          duration: 1,
+          delay: 0,
+          iteration: 1,
+        },
+        {
+          name: 'lightSpeedOut',
+          duration: 1,
+          delay: 0,
+          iteration: 1,
+        }
+      ])
+    </script>
+  </body>
+</html>
