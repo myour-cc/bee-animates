@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      height: 100%;
+    }
+
+    body {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #222;
+      overflow: hidden;
+    }
+
+    .center {
+      width: 120px;
+      height: 120px;
+      margin: 10px;
+      background-color: #fff;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="center a1"></div>
+  <div class="center a2"></div>
+  <div class="center a3"></div>
+  <script src="../build/index.js"></script>
+  <script>
+    beeAnimations({
+      el: '.a1',
+      animations: [{
+        name: 'rotateIn',
+        duration: 1,
+        delay: 0,
+        count: 1,
+        callback: () => {
+          console.log('rotateIn')
+        }
+      }, {
+        name: 'lightSpeedOut',
+        duration: 1,
+        delay: 0,
+        count: 1,
+        callback: () => {
+          console.log('lightSpeedOut')
+        }
+      }]
+    })
+
+    beeAnimations({
+      el: '.a2',
+      animations: [{
+        name: 'rubberBand',
+        duration: 3,
+        delay: 0,
+        count: 1,
+        callback: () => {
+          console.log('rubberBand')
+        }
+      }, {
+        name: 'lightSpeedOut',
+        duration: 1,
+        delay: 0,
+        count: 1,
+        callback: () => {
+          console.log('lightSpeedOut')
+        }
+      }]
+    })
+
+    beeAnimations({
+      el: '.a3',
+      animations: [{
+        name: 'rotateIn',
+        duration: 3,
+        delay: 0,
+        count: 1,
+        callback: () => {
+          console.log('rotateIn')
+        }
+      }, {
+        name: 'lightSpeedOut',
+        duration: 2,
+        delay: 0,
+        count: 1,
+        callback: () => {
+          console.log('lightSpeedOut')
+        }
+      }]
+    })
+
+  </script>
+</body>
+
+</html>
